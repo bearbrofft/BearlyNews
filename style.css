@@ -1,3 +1,12 @@
+html, body {
+    background-color: ivory;
+}
+
+
+#topnav-right {
+    float: right;
+    padding-right: 3rem;
+}
 .topnav {
     opacity: 90%;
     overflow: hidden;
@@ -50,13 +59,11 @@
     z-index: 200;
 }
 .topnav a:hover, .drpdwn:hover .drpbtn {
-    background-color: gray;
-    color: black;
+    color: royalblue;
     z-index: 200;
 }
 .drpdwncontent a:hover {
-    background-color: lightgray;
-    color: black;
+    color: royalblue;
     z-index: 200;
 }
 
