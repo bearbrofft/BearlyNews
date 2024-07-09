@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Bearly News: Hiking</title>
+
+</head>
+
+<style>
+    .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+
+    .container {
+        width: 70%;
+        margin-right: auto;
+        margin-left: auto;
+        border: 1px dashed black;
+        margin-bottom: 20px;
+    }
+    h3#pemi {
+        font-family: "IBM Plex Mono";
+        text-align: center;
+    }
+    .s1 {
+        font-family: "IBM Plex Mono";
+        text-align: left;
+    }
+    div#pic {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+            width: 70%;
+            padding: 10px;  
+            opacity: 90%;
+            margin-bottom: 10px;
+            border: 1px dashed black;
+        }
+
+</style>
+
+<script type="text/javascript">
+
+    var mycols = new Array("red", "blue", "green", "purple", "pink", "orange");
+        var mypics = new Array("images/slide1.jpg", "images/slide2.jpg", "images/slide3.jpg", "images/slide4.jpg", "images/slide5.jpg", "images/slide6.jpg");
+        var c;
+        c = 0;
+
+    function showSlides() {
+        var myimg;
+        myimg = document.getElementById("pump");
+        myimg.src = mypics[c];
+        myimg.border.color = mycols[c];
+        ++c;
+        if (c > mypics.length - 1) {
+            c = 0;
+        }  
+        setTimeout("showSlides()", 2000);
+    }
+
+
+
+</script>
+
+
+<body onload="showSlides()">
+
+    <div class="topnav" id="mytopnav">
+        <a href="index.htm">Home</a>
+        <div class="drpdwn">
+            <button id="products" onclick="nav()" class="drpbtn">Articles</button>
+            <div class="drpdwncontent">
+                <a href="hiking.htm">Hiking</a>
+                <a href="style.htm">Style</a>
+                <a href="running.htm">Running</a>
+                <a href="reviews.htm">Reviews</a>
+            </div>
+        </div>
+        <a href="about.htm">Bio</a>
+    </div>
+
+    <div class="container">
+        <h3 id="pemi">My Experience Hiking the Pemi Loop</h3>
+        
+        <img id="frzn" src="images/slide3.jpg" alt="The White Mountains" title="The Rolling White Mountains" width="500px" class="center">
+        
+
+        <p class="s1">
+            I want to start off by recognizing that this hike is extremely challenging and technical. What we did was not 
+            for the feint of heart and this is most certainly not designed to be a day hike, but alas, that is what we made it. 
+        </p>
+        <p class="s1">
+            I love the White Mountains, ever since my first glimpse of them in July of 2023. They provide such an amazing combination
+            of beuatiful landscapes, friendly visitors, and technical hiking that is difficult to find anywhere else on the East Coast.
+            One of the staples of this range is the notorious Pemi Loop, a 30 mile trail that weaves you through multiple peaks on the 
+            northeast 4000 footers list (Flume, Liberty, Lincoln, Lafayette, Garfield, Galehead, South Twin, Bond, Bondcliffs). These peaks provide incredible views of the surrounding landscape,
+            but can only be attained through difficult ascents. 
+        </p>
+        <p class="s1">
+            Our day started at 4:30 AM. The night was spent in the nearby campground of Hancock, where, according to my friends watch, approximately 
+            2 hours and 14 minutes of sleep were obtained. The site was broken down as we lumbered over to the car for a short two minute drive to the trailhead. 
+            Upon the start of the loop, we were greeted with a seemingly flat, well-maintained trail that seemed to stretch for miles (something that will be yearned for in later hours).
+            After about 30 minutes of hiking, the sun started to brighten up the trail and we were able to ditch our headlamps and let our eyes adjust. The sky above was clear as can be,
+            as we continued to pray that the weather would hold out for us. 
+        </p>
+        <p class="s1">
+            We moved rapidly. All ascents and descents we faced in the first few hours of the day were seemingly breezed through. The first of our challenges was 
+            climbing Mt. Flume, a 4329 foot peak. Energy was still high within the group so this peak was hit relatively early. The views from the top revealed bluebird conditions
+            and an amazing morning light that spread across the entire valley.  
+        </p>
+        <p class="s1">
+            We then continued on through the ups and downs needed to climb Liberty, Lincoln, Lafayette, and Garfield, all of which left the team feeling less and less sure that this 
+            30 miler could be completed before the sun was set. We began to think only of the AMC Hut located near Galehead Mountain, which would provide us with drinking water and 
+            a place where we could dine on the food we had packed the night before (a spread that would supply enough carbs and sugar to fuel a Hippo). 
+        </p>
+        <p class="s1">
+            Perhaps the most teasing climb was the one to this very hut. At the time, my 3 liters of water had been drained, my pants had been completely sweat through, and my hunger 
+            was reaching its newest apex. "Only 500 more feet of climbing" I was told. Who knew that 500 feet of climbing could pass by in 60 full minutes? I guess not me. Regardless of the 
+            challenge, we arrived in a crippled and weary state. 
+        </p>
+        <p class="s1">
+            I believe this is when the delerium set in. Our next and final big climb was to the top of South Twin, a 4899 footer. My legs immediately siezed. Routine stops were made to consume
+            electrolytes. Every 50 steps felt like they took centuries. I had approached "the wall". 
+        </p>
+        <p class="s1">
+            Once the ascent was made around 2:30 PM, I felt a small sense of accomplishment that was quickly squandered at the realization that there was still 14 more miles to go. At least it
+            wasn't a harsh climb. These ridge walks were beautiful, but faded with the passing hours of the day. As we reached Bondcliffs, our last peak of the day, we still had 8 miles of hiking to 
+            go. 
+        </p>
+        <p class="s1">
+            On this descent, I began to hallucinate. My friends were always a few steps ahead of me, but their eagerness to descend back to the flat railroad ties at the bottom of the loop got the better of 
+            them, and they sped off. I was left to my own devices, moving with great haste toward the flat trail below. In the corners of my eyes of saw shadowy figures and heard whispering voices. This was a 
+            very stereotypical experience. After seemingly hours of descending, I finally linked back up with my friends below, and we walked the two hour, flat railroad back home with a total trail time of 15 hours and 27 minutes.
+        </p>
+        <p class="s1">
+            See the slideshow below for pictures of the journey, along with the McDonald's that was inhaled in Lincoln, NH that evening. 
+        </p>
+
+    </div>
+
+
+    <div id="pic">
+        <img id="pump" src="images/slide1.jpg" alt="Slide 1" title="Slide 1" width="500px">
+    </div>
+
+
+    
+</body>
+</html>

@@ -1,0 +1,110 @@
+.topnav {
+    opacity: 90%;
+    overflow: hidden;
+    font-family: "IBM Plex Mono";
+    z-index: 200;
+}
+.topnav a {
+    float: left;
+    color: black;
+    display: block;
+    text-align: center;
+    padding: 14px 40px;
+    text-decoration: none;
+    font-size: 1em;
+    z-index: 200;
+}
+
+.drpdwn {
+    float: left;
+    overflow: hidden;
+    z-index: 200;
+}
+.drpdwn .drpbtn {
+    font-size: 1em;
+    border: none;
+    outline: none;
+    color: black;
+    padding: 14px 40px;
+    font-family: inherit;
+    background-color: inherit;
+    margin: 0;
+    z-index: 200;
+}
+.drpdwncontent {
+    position: absolute;
+    display: none;
+    z-index: 200;
+}
+.drpdwn:hover .drpdwncontent {
+    display: block;
+    z-index: 200;
+}
+.drpdwncontent a {
+    float: none;
+    display: block;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    text-align: left;
+    z-index: 200;
+}
+.topnav a:hover, .drpdwn:hover .drpbtn {
+    background-color: gray;
+    color: black;
+    z-index: 200;
+}
+.drpdwncontent a:hover {
+    background-color: lightgray;
+    color: black;
+    z-index: 200;
+}
+
+.topnav .icon {
+    display: none;
+    z-index: 200;
+}
+
+@media screen and (max-width: 750px) {
+
+    .topnav a:not(:first-child),
+    .drpdwn .drpbtn {
+    display: none;
+    }
+
+    .topnav a.icon {
+    float: right;
+    display: block;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .topnav.responsive {
+        position: relative;
+    }
+
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    .topnav.responsive .drpdwn {
+        float: none;
+    }
+
+    .topnav.responsive .drpdwncontent {
+        position: relative;
+    }
+
+    .topnav.responsive .drpdwn .drpbtn {
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
