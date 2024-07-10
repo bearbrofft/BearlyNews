@@ -8,6 +8,7 @@ html, body {
     padding-right: 3rem;
 }
 .topnav {
+    margin-top: 0%;
     opacity: 90%;
     overflow: hidden;
     font-family: "IBM Plex Mono";
